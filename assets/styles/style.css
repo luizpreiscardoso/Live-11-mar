@@ -1,0 +1,50 @@
+.background {
+  height: 100vh;
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  /* background-attachment: scroll; */
+}
+
+/* MAIN */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+figure {
+  width: 30vw;
+  display: flex;
+}
+
+figure > img {
+  height: 144px;
+  width: 254px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 70vw;
+}
+
+nav > ul {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul > li > a {
+  color: var(--color-grey-2);
+  height: 65px;
+  font-family: Iceland;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+ul > li > a:hover {
+  font-weight: 600;
+}
+/* MAIN */
