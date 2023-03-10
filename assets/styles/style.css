@@ -1,5 +1,17 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .background {
-  height: 100vh;
+  height: 900px;
   background-image: url("../images/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,33 +19,34 @@
   /* background-attachment: scroll; */
 }
 
-/* MAIN */
+/* .position {
+  width: 80vw;
+} */
+/* HEADER*/
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+  width: 80vw;
+  margin: 0 auto;
+  height: 130px;
 
-figure {
-  width: 30vw;
-  display: flex;
+  position: fixed;
+  z-index: 999;
+  left: 200px;
 }
 
 figure > img {
   height: 144px;
   width: 254px;
-  margin: 0 auto;
 }
 
 nav {
-  width: 70vw;
+  width: 70%;
 }
 
 nav > ul {
-  width: 40vw;
+  width: 70%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 ul > li > a {
@@ -46,5 +59,92 @@ ul > li > a {
 
 ul > li > a:hover {
   font-weight: 600;
+}
+/* HEADER */
+
+/* MAIN */
+main {
+  width: 80vw;
+  margin: 0 auto;
+  gap: 15px;
+  position: relative;
+  top: 250px;
+}
+
+h1 {
+  width: 668px;
+  font-family: Iceland;
+  font-size: 92px;
+  font-weight: 400;
+  line-height: 89px;
+  text-align: left;
+  color: var(--color-grey-2);
+}
+
+main > p {
+  width: 506px;
+  font-family: Actor;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: var(--text-color-1);
+}
+
+button {
+  height: 46px;
+  width: 180px;
+  left: 5002px;
+  top: 23px;
+  color: var(--color-grey-2);
+  margin: 10px;
+  font-family: Iceland;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--color-secondary);
+}
+
+.active:hover {
+  border: 2px solid var(--color-grey-1);
+}
+
+.inactive {
+  background-color: var(--color-grey-1);
+}
+
+.inactive:hover {
+  border: 2px solid var(--color-grey-2);
+}
+
+main > section {
+  margin-top: 100px;
+}
+h3 {
+  height: 65px;
+  width: 336px;
+  font-family: Iceland;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: var(--color-grey-2);
+}
+
+section > ul {
+  width: 800px;
+}
+section > ul > li {
+  height: 139px;
+  width: 261px;
+  background-image: url("../images/inside/relationship.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
 }
 /* MAIN */

@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="background">
-      <header>
+      <header class="flex">
         <figure>
           <img src="./assets/images/KenzieAcademyLogo.png" />
         </figure>
@@ -41,29 +41,25 @@
         </nav>
       </header>
 
-      <main>
-        <section class="home">
-          <div>
-            <h1>THE LAS OF US |</h1>
-            <p>
-              When you are lost in the dark, look for the light, belive in the
-              fireflies.
-            </p>
-            <div>
-              <button>MORE INFO</button>
-              <button>WATCH TEASER</button>
-            </div>
-          </div>
-          <div>
-            <h3>INSIDE</h3>
-            <div>
-              <ul>
-                <li>SURVIVAL</li>
-                <li>RELATIONSHIP</li>
-                <li>ADVENTURE</li>
-              </ul>
-            </div>
-          </div>
+      <main class="flex-column">
+        <h1>THE LAS OF US |</h1>
+        <p>
+          When you are lost in the dark, look for the light, belive in the
+          fireflies.
+        </p>
+        <div>
+          <button class="active">MORE INFO</button>
+          <button class="inactive">WATCH TEASER</button>
+        </div>
+
+        <section class="flex-column">
+          <h3>INSIDE</h3>
+
+          <ul class="flex">
+            <li>SURVIVAL</li>
+            <li>RELATIONSHIP</li>
+            <li>ADVENTURE</li>
+          </ul>
         </section>
       </main>
     </div>
