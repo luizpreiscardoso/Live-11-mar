@@ -170,6 +170,11 @@ section > ul > li {
   line-height: 26px;
 }
 
+.episodes-list::-webkit-scrollbar {
+  background-color: var(--color-secondary); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid black; /* creates padding around scroll thumb */
+}
 .episodes-list {
   height: 762px;
   width: 671px;
